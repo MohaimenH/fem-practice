@@ -10,7 +10,7 @@ import ThemeContext from "./ThemeContext";
 // import Pet from "./Pet";
 
 const App = () => {
-  const theme = useState("darkblue");
+  const theme = useState("blue");
 
   return (
     <ThemeContext.Provider value={theme}>
