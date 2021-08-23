@@ -7,3 +7,13 @@ const add = (a, b) => {
 function subtract(a, b) {
     return a - b;
 }
+const names = {
+    first: "Mohaimen",
+    last: "Hassan",
+};
+// let civic: { make: string; model: string; year: number };
+let civic = { make: "Honda Civic", model: "Touring", year: 2019 };
+const printCar = (car) => {
+    console.log(car.make, car.model, car.year, car.chargeVoltage);
+};
+printCar(civic);
