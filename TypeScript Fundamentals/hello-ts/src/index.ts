@@ -16,15 +16,28 @@ const names = {
 };
 
 // let civic: { make: string; model: string; year: number };
-let civic = { make: "Honda Civic", model: "Touring", year: 2019 };
+let civic = {
+    make: "Honda Civic",
+    model: "Touring",
+    year: 2019,
+};
+
+let ferrari: { make: string; model?: string } = {
+    make: "Ferarri F12",
+    model: "GT",
+};
 
 const printCar = (car: {
     make: string;
     model: string;
     year: number;
-    chargeVoltage?: number;
+    chargeVoltage?: number; // The ? stands for optional properties
 }) => {
-    console.log(car.make, car.model, car.year, car.chargeVoltage);
+    if (car.chargeVoltage) {
+        console.log(car.make, car.model, car.year, car.chargeVoltage);
+    } else {
+        console.log(car.make, car.model, car.year);
+    }
 };
 
 printCar(civic);

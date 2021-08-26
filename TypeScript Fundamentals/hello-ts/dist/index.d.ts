@@ -11,6 +11,10 @@ declare let civic: {
     model: string;
     year: number;
 };
+declare let ferrari: {
+    make: string;
+    model?: string;
+};
 declare const printCar: (car: {
     make: string;
     model: string;

@@ -12,8 +12,21 @@ const names = {
     last: "Hassan",
 };
 // let civic: { make: string; model: string; year: number };
-let civic = { make: "Honda Civic", model: "Touring", year: 2019 };
+let civic = {
+    make: "Honda Civic",
+    model: "Touring",
+    year: 2019,
+};
+let ferrari = {
+    make: "Ferarri F12",
+    model: "GT",
+};
 const printCar = (car) => {
-    console.log(car.make, car.model, car.year, car.chargeVoltage);
+    if (car.chargeVoltage) {
+        console.log(car.make, car.model, car.year, car.chargeVoltage);
+    }
+    else {
+        console.log(car.make, car.model, car.year);
+    }
 };
 printCar(civic);
